@@ -1,5 +1,11 @@
 # RED-ML: RNA editing detection based on machine learning
 
+## !Compilation
+Get libbam.a by compiling samtools and put to the root directory, then
+```sh
+g++ -o a.out -L. -lz -lbam -Isam gzstream.cpp SamCtrl.cpp MutDetML.cpp
+```
+
 ## Description
 
 RED-ML is a software tool to do genome-wide RNA editing dectection (RED) based on RNA-seq data. All source codes and executables are located in the "bin" directory. The tool can be run on a Linux platform and the main program is red_ML.pl.
